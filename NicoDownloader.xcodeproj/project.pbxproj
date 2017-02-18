@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D17E57D1E4227BF00061CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D17E57B1E4227BF00061CC1 /* Main.storyboard */; };
+		3D3EDEC41E35FD9B005B98A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEC31E35FD9B005B98A4 /* AppDelegate.swift */; };
+		3D3EDEC91E35FD9B005B98A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */; };
+		3D3EDEF51E35FDDC005B98A4 /* DefConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEEF1E35FDDC005B98A4 /* DefConst.swift */; };
+		3D3EDEF61E35FDDC005B98A4 /* Nicolive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEF01E35FDDC005B98A4 /* Nicolive.swift */; };
+		3D3EDEF71E35FDDC005B98A4 /* NicoAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEF11E35FDDC005B98A4 /* NicoAccount.swift */; };
+		3D3EDEF91E35FDDC005B98A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEF31E35FDDC005B98A4 /* ViewController.swift */; };
+		3D7FB53C1E43BF5200B9105D /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FB53B1E43BF5200B9105D /* PreferencesWindow.swift */; };
+		3D7FB53E1E44A74800B9105D /* XmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FB53D1E44A74800B9105D /* XmlParser.swift */; };
+		3D7FB54E1E48A3F300B9105D /* rtmpdump in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FB54D1E48A3F200B9105D /* rtmpdump */; };
+		3DBC2DBB1E4347AD00C94CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC2DB91E4347AD00C94CEE /* Localizable.strings */; };
+		7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D17E57C1E4227BF00061CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D3EDEC01E35FD9B005B98A4 /* NicoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3EDEC31E35FD9B005B98A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D3EDECD1E35FD9C005B98A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3EDEEF1E35FDDC005B98A4 /* DefConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefConst.swift; sourceTree = "<group>"; };
+		3D3EDEF01E35FDDC005B98A4 /* Nicolive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nicolive.swift; sourceTree = "<group>"; };
+		3D3EDEF11E35FDDC005B98A4 /* NicoAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoAccount.swift; sourceTree = "<group>"; };
+		3D3EDEF31E35FDDC005B98A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D7FB53B1E43BF5200B9105D /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		3D7FB53D1E44A74800B9105D /* XmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParser.swift; sourceTree = "<group>"; };
+		3D7FB54D1E48A3F200B9105D /* rtmpdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rtmpdump; sourceTree = "<group>"; };
+		3DBC2DBA1E4347AD00C94CEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicoDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3EDEBD1E35FD9B005B98A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D073AD91E434D8D00A5CA3B /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				3DBC2DB91E4347AD00C94CEE /* Localizable.strings */,
+			);
+			name = Localizations;
+			sourceTree = "<group>";
+		};
+		3D3EDEB71E35FD9B005B98A4 = {
+			isa = PBXGroup;
+			children = (
+				3D3EDEC21E35FD9B005B98A4 /* NicoDownloader */,
+				3D3EDEC11E35FD9B005B98A4 /* Products */,
+				657FAF758476A20ABE71A845 /* Pods */,
+				A956550B4D6431282B2D290E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D3EDEC11E35FD9B005B98A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3EDEC01E35FD9B005B98A4 /* NicoDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D3EDEC21E35FD9B005B98A4 /* NicoDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				3D3EDEC31E35FD9B005B98A4 /* AppDelegate.swift */,
+				3D3EDEF31E35FDDC005B98A4 /* ViewController.swift */,
+				3D7FB53B1E43BF5200B9105D /* PreferencesWindow.swift */,
+				3D3EDEEF1E35FDDC005B98A4 /* DefConst.swift */,
+				3D3EDEF01E35FDDC005B98A4 /* Nicolive.swift */,
+				3D3EDEF11E35FDDC005B98A4 /* NicoAccount.swift */,
+				3D7FB53D1E44A74800B9105D /* XmlParser.swift */,
+				3D17E57B1E4227BF00061CC1 /* Main.storyboard */,
+				3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */,
+				3D7FB54A1E48A3D300B9105D /* Resources */,
+				3D073AD91E434D8D00A5CA3B /* Localizations */,
+				3D3EDECD1E35FD9C005B98A4 /* Info.plist */,
+			);
+			path = NicoDownloader;
+			sourceTree = "<group>";
+		};
+		3D7FB54A1E48A3D300B9105D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D7FB54D1E48A3F200B9105D /* rtmpdump */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		657FAF758476A20ABE71A845 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */,
+				ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A956550B4D6431282B2D290E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D3EDEBF1E35FD9B005B98A4 /* NicoDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3EDEE61E35FD9C005B98A4 /* Build configuration list for PBXNativeTarget "NicoDownloader" */;
+			buildPhases = (
+				1C10909C5123942CCF09116C /* [CP] Check Pods Manifest.lock */,
+				3D3EDEBC1E35FD9B005B98A4 /* Sources */,
+				3D3EDEBD1E35FD9B005B98A4 /* Frameworks */,
+				3D3EDEBE1E35FD9B005B98A4 /* Resources */,
+				5F17B40409C61597998297EE /* [CP] Embed Pods Frameworks */,
+				03E15BCEE0F09B589C93BEDA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NicoDownloader;
+			productName = NicoDownloader;
+			productReference = 3D3EDEC01E35FD9B005B98A4 /* NicoDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D3EDEB81E35FD9B005B98A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kPherox;
+				TargetAttributes = {
+					3D3EDEBF1E35FD9B005B98A4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TZD4EE242K;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3D3EDEBB1E35FD9B005B98A4 /* Build configuration list for PBXProject "NicoDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 3D3EDEB71E35FD9B005B98A4;
+			productRefGroup = 3D3EDEC11E35FD9B005B98A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D3EDEBF1E35FD9B005B98A4 /* NicoDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D3EDEBE1E35FD9B005B98A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D17E57D1E4227BF00061CC1 /* Main.storyboard in Resources */,
+				3DBC2DBB1E4347AD00C94CEE /* Localizable.strings in Resources */,
+				3D3EDEC91E35FD9B005B98A4 /* Assets.xcassets in Resources */,
+				3D7FB54E1E48A3F300B9105D /* rtmpdump in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E15BCEE0F09B589C93BEDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C10909C5123942CCF09116C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F17B40409C61597998297EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D3EDEBC1E35FD9B005B98A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3EDEC41E35FD9B005B98A4 /* AppDelegate.swift in Sources */,
+				3D3EDEF61E35FDDC005B98A4 /* Nicolive.swift in Sources */,
+				3D3EDEF51E35FDDC005B98A4 /* DefConst.swift in Sources */,
+				3D3EDEF91E35FDDC005B98A4 /* ViewController.swift in Sources */,
+				3D3EDEF71E35FDDC005B98A4 /* NicoAccount.swift in Sources */,
+				3D7FB53C1E43BF5200B9105D /* PreferencesWindow.swift in Sources */,
+				3D7FB53E1E44A74800B9105D /* XmlParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D17E57B1E4227BF00061CC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D17E57C1E4227BF00061CC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBC2DB91E4347AD00C94CEE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBC2DBA1E4347AD00C94CEE /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D3EDEE41E35FD9C005B98A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D3EDEE51E35FD9C005B98A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3D3EDEE71E35FD9C005B98A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TZD4EE242K;
+				INFOPLIST_FILE = NicoDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3D3EDEE81E35FD9C005B98A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TZD4EE242K;
+				INFOPLIST_FILE = NicoDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D3EDEBB1E35FD9B005B98A4 /* Build configuration list for PBXProject "NicoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3EDEE41E35FD9C005B98A4 /* Debug */,
+				3D3EDEE51E35FD9C005B98A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3EDEE61E35FD9C005B98A4 /* Build configuration list for PBXNativeTarget "NicoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3EDEE71E35FD9C005B98A4 /* Debug */,
+				3D3EDEE81E35FD9C005B98A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D3EDEB81E35FD9B005B98A4 /* Project object */;
+}

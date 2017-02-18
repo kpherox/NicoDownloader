@@ -1,0 +1,15 @@
+PODS:
+  - Fuzi (1.0.1)
+  - PySwiftyRegex (1.0.0)
+
+DEPENDENCIES:
+  - Fuzi (~> 1.0.0)
+  - PySwiftyRegex (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  Fuzi: 851403654bac55675aaeed815d0c8a1d3e3d3e8b
+  PySwiftyRegex: 9f53cc95dcc4b5c91f050487d6dba3e4aac298ed
+
+PODFILE CHECKSUM: fc47f7b8c165aaf2a2d4a7f66371de6f7220ca74
+
+COCOAPODS: 1.2.0.rc.1
