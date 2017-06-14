@@ -1,0 +1,3 @@
+[submodule "Modules/rtmpdump"]
+	path = Modules/rtmpdump
+	url = https://github.com/kPherox/rtmpdump_nicolive

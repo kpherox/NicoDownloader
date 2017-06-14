@@ -18,8 +18,23 @@
 		3D7FB53E1E44A74800B9105D /* XmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FB53D1E44A74800B9105D /* XmlParser.swift */; };
 		3D7FB54E1E48A3F300B9105D /* rtmpdump in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FB54D1E48A3F200B9105D /* rtmpdump */; };
 		3DBC2DBB1E4347AD00C94CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC2DB91E4347AD00C94CEE /* Localizable.strings */; };
+		3DEDD67C1EF0142A00E63204 /* rtmpdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */; };
+		3DEDD6821EF01F4300E63204 /* librtmp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DEDD67D1EF01C6500E63204 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DEDD6821EF01F4300E63204 /* librtmp.1.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D17E57C1E4227BF00061CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +50,8 @@
 		3D7FB53D1E44A74800B9105D /* XmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParser.swift; sourceTree = "<group>"; };
 		3D7FB54D1E48A3F200B9105D /* rtmpdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rtmpdump; sourceTree = "<group>"; };
 		3DBC2DBA1E4347AD00C94CEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rtmpdump.swift; sourceTree = "<group>"; };
+		3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librtmp.1.dylib; path = NicoDownloader/Resources/librtmp.1.dylib; sourceTree = "<group>"; };
 		ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 		F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicoDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +105,7 @@
 				3D3EDEF01E35FDDC005B98A4 /* Nicolive.swift */,
 				3D3EDEF11E35FDDC005B98A4 /* NicoAccount.swift */,
 				3D7FB53D1E44A74800B9105D /* XmlParser.swift */,
+				3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */,
 				3D17E57B1E4227BF00061CC1 /* Main.storyboard */,
 				3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */,
 				3D7FB54A1E48A3D300B9105D /* Resources */,
@@ -117,6 +135,7 @@
 		A956550B4D6431282B2D290E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */,
 				F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */,
 			);
 			name = Frameworks;
@@ -135,6 +154,7 @@
 				3D3EDEBE1E35FD9B005B98A4 /* Resources */,
 				5F17B40409C61597998297EE /* [CP] Embed Pods Frameworks */,
 				03E15BCEE0F09B589C93BEDA /* [CP] Copy Pods Resources */,
+				3DEDD67D1EF01C6500E63204 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -258,6 +278,7 @@
 			files = (
 				3D3EDEC41E35FD9B005B98A4 /* AppDelegate.swift in Sources */,
 				3D3EDEF61E35FDDC005B98A4 /* Nicolive.swift in Sources */,
+				3DEDD67C1EF0142A00E63204 /* rtmpdump.swift in Sources */,
 				3D3EDEF51E35FDDC005B98A4 /* DefConst.swift in Sources */,
 				3D3EDEF91E35FDDC005B98A4 /* ViewController.swift in Sources */,
 				3D3EDEF71E35FDDC005B98A4 /* NicoAccount.swift in Sources */,
@@ -388,12 +409,30 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZD4EE242K;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = NicoDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NicoDownloader/Resources",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Fuzi/Fuzi.framework/Headers\"",
+					"-iquote",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PySwiftyRegex/PySwiftyRegex.framework/Headers\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Fuzi/libxml2 $(SRCROOT)/Modules";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -405,12 +444,30 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZD4EE242K;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = NicoDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NicoDownloader/Resources",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Fuzi/Fuzi.framework/Headers\"",
+					"-iquote",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PySwiftyRegex/PySwiftyRegex.framework/Headers\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Fuzi/libxml2 $(SRCROOT)/Modules";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

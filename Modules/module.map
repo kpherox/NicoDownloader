@@ -1,0 +1,5 @@
+module CRtmp {
+  umbrella "rtmpdump/librtmp"
+  header "rtmpdump/librtmp/rtmp.c"
+  export *
+}
