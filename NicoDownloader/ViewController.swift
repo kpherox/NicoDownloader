@@ -97,7 +97,7 @@ class ViewController: NSViewController, NicoliveDelegate {
 
     func finishDownload(filename: String) {
         self.downloadStatus.stopAnimation(nil)
-        self.downloadFilename.stringValue = "Download to DefConst.nicoDLDir/\(filename)"
+        self.downloadFilename.stringValue = "Download to \(DefConst.nicoDLDir)/\(filename)"
         self.statusCode.textColor = NSColor.textColor
         self.statusCode.stringValue = "Finish!"
     }

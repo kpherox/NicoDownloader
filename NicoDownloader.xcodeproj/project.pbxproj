@@ -17,8 +17,9 @@
 		3D7FB53C1E43BF5200B9105D /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FB53B1E43BF5200B9105D /* PreferencesWindow.swift */; };
 		3D7FB53E1E44A74800B9105D /* XmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7FB53D1E44A74800B9105D /* XmlParser.swift */; };
 		3D7FB54E1E48A3F300B9105D /* rtmpdump in Resources */ = {isa = PBXBuildFile; fileRef = 3D7FB54D1E48A3F200B9105D /* rtmpdump */; };
+		3D95A7501F04B0DE0096963D /* String+utf8CString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95A74F1F04B0DE0096963D /* String+utf8CString.swift */; };
 		3DBC2DBB1E4347AD00C94CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC2DB91E4347AD00C94CEE /* Localizable.strings */; };
-		3DEDD67C1EF0142A00E63204 /* rtmpdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */; };
+		3DEDD67C1EF0142A00E63204 /* Rtmpdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDD67B1EF0142A00E63204 /* Rtmpdump.swift */; };
 		3DEDD6821EF01F4300E63204 /* librtmp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */; };
 /* End PBXBuildFile section */
@@ -49,8 +50,9 @@
 		3D7FB53B1E43BF5200B9105D /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
 		3D7FB53D1E44A74800B9105D /* XmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlParser.swift; sourceTree = "<group>"; };
 		3D7FB54D1E48A3F200B9105D /* rtmpdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rtmpdump; sourceTree = "<group>"; };
+		3D95A74F1F04B0DE0096963D /* String+utf8CString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+utf8CString.swift"; sourceTree = "<group>"; };
 		3DBC2DBA1E4347AD00C94CEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rtmpdump.swift; sourceTree = "<group>"; };
+		3DEDD67B1EF0142A00E63204 /* Rtmpdump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rtmpdump.swift; sourceTree = "<group>"; };
 		3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librtmp.1.dylib; path = NicoDownloader/Resources/librtmp.1.dylib; sourceTree = "<group>"; };
 		ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +107,8 @@
 				3D3EDEF01E35FDDC005B98A4 /* Nicolive.swift */,
 				3D3EDEF11E35FDDC005B98A4 /* NicoAccount.swift */,
 				3D7FB53D1E44A74800B9105D /* XmlParser.swift */,
-				3DEDD67B1EF0142A00E63204 /* rtmpdump.swift */,
+				3DEDD67B1EF0142A00E63204 /* Rtmpdump.swift */,
+				3D95A74F1F04B0DE0096963D /* String+utf8CString.swift */,
 				3D17E57B1E4227BF00061CC1 /* Main.storyboard */,
 				3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */,
 				3D7FB54A1E48A3D300B9105D /* Resources */,
@@ -278,9 +281,10 @@
 			files = (
 				3D3EDEC41E35FD9B005B98A4 /* AppDelegate.swift in Sources */,
 				3D3EDEF61E35FDDC005B98A4 /* Nicolive.swift in Sources */,
-				3DEDD67C1EF0142A00E63204 /* rtmpdump.swift in Sources */,
+				3DEDD67C1EF0142A00E63204 /* Rtmpdump.swift in Sources */,
 				3D3EDEF51E35FDDC005B98A4 /* DefConst.swift in Sources */,
 				3D3EDEF91E35FDDC005B98A4 /* ViewController.swift in Sources */,
+				3D95A7501F04B0DE0096963D /* String+utf8CString.swift in Sources */,
 				3D3EDEF71E35FDDC005B98A4 /* NicoAccount.swift in Sources */,
 				3D7FB53C1E43BF5200B9105D /* PreferencesWindow.swift in Sources */,
 				3D7FB53E1E44A74800B9105D /* XmlParser.swift in Sources */,

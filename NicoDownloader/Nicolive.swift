@@ -157,6 +157,10 @@ class Nicolive: XmlParserDelegate {
             }
 
             fileHandle.readInBackgroundAndNotify()
+            
+            /*
+            var rtmpdump = Rtmpdump(url: contentURL.utf8CString, ticket: ticket)
+            */
         }
 
         self.statusCode = "success"
