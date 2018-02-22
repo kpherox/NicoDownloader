@@ -29,5 +29,7 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
-#CocoaPod
-Pods/*
+#Carthage
+Carthage/Build
+Carthage/Checkouts
+
