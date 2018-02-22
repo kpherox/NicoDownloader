@@ -1,12 +1,12 @@
 # NicoDownloader
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)  
+[![MIT License Badge]][License]  
 Niconico Live time shift downloader
 
 ## Requirements
 - Mac OS X 10.11 or later.
 
 ## Installation
-1. Download `NicoDownloader.dmg` from [Release Page](/releases/latest)
+1. Download `NicoDownloader.dmg` from [Release Page]
 2. Open `NicoDownloader.dmg`
 3. Copy `NicoDownloader.app` to Applications folder
 
@@ -42,8 +42,10 @@ Released under the [MIT License][Fuzi-License].
 Copyright (c) 2015 Ce Zheng  
 Released under the [MIT License][PySwiftyRegex-License].
 
-[License]: https://github.com/kPherox/NicoDownloader/blob/master/LICENSE
-[rtmpdump-License]: https://github.com/taonico/rtmpdump-nico-live/blob/master/COPYING
+[MIT License Badge]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[Release Page]: https://github.com/kpherox/nicodownloader/releases/latest
+[License]: https://github.com/kpherox/nicodownloader/blob/master/LICENSE
+[rtmpdump-License]: https://github.com/taonico/rtmpdump-nico-live/blob/nicolive/COPYING
 [Fuzi-License]: https://github.com/cezheng/Fuzi/blob/master/LICENSE
 [PySwiftyRegex-License]: https://github.com/cezheng/PySwiftyRegex/blob/master/LICENSE
 
