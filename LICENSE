@@ -1,3 +1,5 @@
+MIT License
+
 Copyright (c) 2017 kPherox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -18,25 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-Include rtmpdump file
-
-Copyright (c) 2009 Andrej Stepanchuk
-Copyright (c) 2009-2011 Howard Chu
-Copyright (c) 2010 2a665470ced7adb7156fcef47f8199a6371c117b8a79e399a2771e0b36384090
-Copyright (c) 2011 33ae1ce77301f4b4494faaa5f609f3c48b9dcf82
-Released under the GPLv2 license.
-https://github.com/taonico/rtmpdump-nico-live/blob/master/COPYING
-
-Fuzi
-
-Copyright (c) 2015 Ce Zheng
-Released under the MIT license.
-https://github.com/cezheng/Fuzi/blob/master/LICENSE
-
-
-PySwiftyRegex
-
-Copyright (c) 2015 Ce Zheng
-Released under the MIT license.
-https://github.com/cezheng/PySwiftyRegex/blob/master/LICENSE
