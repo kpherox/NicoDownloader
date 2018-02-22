@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D17E57D1E4227BF00061CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D17E57B1E4227BF00061CC1 /* Main.storyboard */; };
+		3D1EAC6C203F10B00005257E /* PySwiftyRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1EAC69203F109E0005257E /* PySwiftyRegex.framework */; };
+		3D1EAC6D203F10B00005257E /* PySwiftyRegex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D1EAC69203F109E0005257E /* PySwiftyRegex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D1EAC6E203F10BC0005257E /* Fuzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1EAC68203F109E0005257E /* Fuzi.framework */; };
+		3D1EAC6F203F10BC0005257E /* Fuzi.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D1EAC68203F109E0005257E /* Fuzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D3EDEC41E35FD9B005B98A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEC31E35FD9B005B98A4 /* AppDelegate.swift */; };
 		3D3EDEC91E35FD9B005B98A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */; };
 		3D3EDEF51E35FDDC005B98A4 /* DefConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3EDEEF1E35FDDC005B98A4 /* DefConst.swift */; };
@@ -21,7 +25,6 @@
 		3DBC2DBB1E4347AD00C94CEE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC2DB91E4347AD00C94CEE /* Localizable.strings */; };
 		3DEDD67C1EF0142A00E63204 /* Rtmpdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEDD67B1EF0142A00E63204 /* Rtmpdump.swift */; };
 		3DEDD6821EF01F4300E63204 /* librtmp.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3DEDD6821EF01F4300E63204 /* librtmp.1.dylib in CopyFiles */,
+				3D1EAC6F203F10BC0005257E /* Fuzi.framework in CopyFiles */,
+				3D1EAC6D203F10B00005257E /* PySwiftyRegex.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		3D17E57C1E4227BF00061CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D1EAC68203F109E0005257E /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/Mac/Fuzi.framework; sourceTree = "<group>"; };
+		3D1EAC69203F109E0005257E /* PySwiftyRegex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PySwiftyRegex.framework; path = Carthage/Build/Mac/PySwiftyRegex.framework; sourceTree = "<group>"; };
+		3D1EAC70203F13130005257E /* NicoDownloader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NicoDownloader.entitlements; sourceTree = "<group>"; };
 		3D3EDEC01E35FD9B005B98A4 /* NicoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3EDEC31E35FD9B005B98A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,9 +62,6 @@
 		3DBC2DBA1E4347AD00C94CEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3DEDD67B1EF0142A00E63204 /* Rtmpdump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rtmpdump.swift; sourceTree = "<group>"; };
 		3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librtmp.1.dylib; path = NicoDownloader/Resources/librtmp.1.dylib; sourceTree = "<group>"; };
-		ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.release.xcconfig"; sourceTree = "<group>"; };
-		EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NicoDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
-		F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicoDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C9DA2A9016656E161295C80 /* Pods_NicoDownloader.framework in Frameworks */,
+				3D1EAC6E203F10BC0005257E /* Fuzi.framework in Frameworks */,
+				3D1EAC6C203F10B00005257E /* PySwiftyRegex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +90,6 @@
 			children = (
 				3D3EDEC21E35FD9B005B98A4 /* NicoDownloader */,
 				3D3EDEC11E35FD9B005B98A4 /* Products */,
-				657FAF758476A20ABE71A845 /* Pods */,
 				A956550B4D6431282B2D290E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -111,9 +116,10 @@
 				3D95A74F1F04B0DE0096963D /* String+utf8CString.swift */,
 				3D17E57B1E4227BF00061CC1 /* Main.storyboard */,
 				3D3EDEC81E35FD9B005B98A4 /* Assets.xcassets */,
+				3D3EDECD1E35FD9C005B98A4 /* Info.plist */,
+				3D1EAC70203F13130005257E /* NicoDownloader.entitlements */,
 				3D7FB54A1E48A3D300B9105D /* Resources */,
 				3D073AD91E434D8D00A5CA3B /* Localizations */,
-				3D3EDECD1E35FD9C005B98A4 /* Info.plist */,
 			);
 			path = NicoDownloader;
 			sourceTree = "<group>";
@@ -126,20 +132,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		657FAF758476A20ABE71A845 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */,
-				ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A956550B4D6431282B2D290E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D1EAC68203F109E0005257E /* Fuzi.framework */,
+				3D1EAC69203F109E0005257E /* PySwiftyRegex.framework */,
 				3DEDD6811EF01F4300E63204 /* librtmp.1.dylib */,
-				F5BD8ABC1DA8AA974C90E0DD /* Pods_NicoDownloader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,12 +149,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D3EDEE61E35FD9C005B98A4 /* Build configuration list for PBXNativeTarget "NicoDownloader" */;
 			buildPhases = (
-				1C10909C5123942CCF09116C /* [CP] Check Pods Manifest.lock */,
 				3D3EDEBC1E35FD9B005B98A4 /* Sources */,
 				3D3EDEBD1E35FD9B005B98A4 /* Frameworks */,
 				3D3EDEBE1E35FD9B005B98A4 /* Resources */,
-				5F17B40409C61597998297EE /* [CP] Embed Pods Frameworks */,
-				03E15BCEE0F09B589C93BEDA /* [CP] Copy Pods Resources */,
 				3DEDD67D1EF01C6500E63204 /* CopyFiles */,
 			);
 			buildRules = (
@@ -180,21 +175,20 @@
 				TargetAttributes = {
 					3D3EDEBF1E35FD9B005B98A4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = TZD4EE242K;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 0;
 							};
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
 				};
 			};
 			buildConfigurationList = 3D3EDEBB1E35FD9B005B98A4 /* Build configuration list for PBXProject "NicoDownloader" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -225,54 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		03E15BCEE0F09B589C93BEDA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1C10909C5123942CCF09116C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5F17B40409C61597998297EE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NicoDownloader/Pods-NicoDownloader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D3EDEBC1E35FD9B005B98A4 /* Sources */ = {
@@ -407,12 +353,17 @@
 		};
 		3D3EDEE71E35FD9C005B98A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF2DD2FED4F037AFE96B69E7 /* Pods-NicoDownloader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = NicoDownloader/NicoDownloader.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZD4EE242K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					/usr/local/include,
@@ -423,7 +374,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NicoDownloader/Resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-iquote",
@@ -434,6 +385,7 @@
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Fuzi/libxml2 $(SRCROOT)/Modules";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -442,12 +394,17 @@
 		};
 		3D3EDEE81E35FD9C005B98A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF1D517CDFEEF242A8D0B21 /* Pods-NicoDownloader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = NicoDownloader/NicoDownloader.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZD4EE242K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					/usr/local/include,
@@ -458,7 +415,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NicoDownloader/Resources",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-iquote",
@@ -469,6 +426,7 @@
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kr-kp.nicodownloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Fuzi/libxml2 $(SRCROOT)/Modules";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "";
