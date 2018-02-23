@@ -1,5 +1,5 @@
 /**
- * Rtmpdump.swift
+ * Rtmp.swift
  *
  * Copyright (c) 2017 kPherox.
  *
@@ -10,7 +10,7 @@
 import Cocoa
 import CRtmp
 
-class Rtmpdump {
+class Rtmp {
     var rtmp: RTMP
     
     var rtmpProtocol: Int32 = RTMP_PROTOCOL_UNDEFINED

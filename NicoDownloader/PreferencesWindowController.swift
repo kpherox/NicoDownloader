@@ -1,5 +1,5 @@
 /**
- * PreferencesWindow.swift
+ * PreferencesWindowController.swift
  *
  * Copyright (c) 2017 kPherox.
  *
