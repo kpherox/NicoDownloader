@@ -9,55 +9,54 @@
 
 import Cocoa
 
-class PreferencesController: NSWindowController {
-    
+class PreferencesWindowController: NSWindowController {
+
+    @IBOutlet weak var toolbar: NSToolbar!
+    @IBOutlet weak var generalItem: NSToolbarItem!
+
+    static let shared: PreferencesWindowController = {
+        let storyboard = NSStoryboard(name: NSStoryboard.Name.main, bundle: .main)
+        let windowController = storyboard.instantiateController(withIdentifier: .preferencesWindowController)
+        return windowController as! PreferencesWindowController
+    }()
+
+    private let viewControllers: [NSViewController] = [
+        GeneralViewController.shared,
+        GeneralViewController.shared,
+        ]
+
     override func windowDidLoad() {
         super.windowDidLoad()
         // Do view setup here.
-    }
 
-}
-
-class PreferencesViewController: NSViewController {
-
-    @IBOutlet weak var usernameLabel: NSTextField!
-    @IBOutlet weak var userIDLabel: NSTextField!
-    @IBOutlet weak var mailLabel: NSTextField!
-    @IBOutlet weak var mailField: NSTextField!
-    @IBOutlet weak var passLabel: NSTextField!
-    @IBOutlet weak var passField: NSSecureTextField!
-    @IBOutlet weak var loggingButton: NSButton!
-    
-    let nicoAccount = NicoAccount()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.updateLabel()
-        // Do view setup here.
-    }
-    
-    func updateLabel() {
-        self.loggingButton.title = self.nicoAccount.loggingFlag! ? "Logout" : "Login"
-        self.usernameLabel.stringValue = self.nicoAccount.username!
-        self.userIDLabel.stringValue = self.nicoAccount.userID!
-        if mailLabel.textColor == NSColor.red {
-            mailLabel.textColor = NSColor.textColor
-            passLabel.textColor = NSColor.textColor
+        guard let item = self.generalItem else {
+            self.window?.center()
+            return
         }
+
+        self.toolbar.selectedItemIdentifier = item.itemIdentifier
+
+        self.switchView(item)
+        self.window?.center()
     }
 
-    @IBAction func pushLogging(_ sender: NSButton) {
-        if self.nicoAccount.loggingFlag! {
-            self.nicoAccount.loggingOut()
-            self.updateLabel()
-        } else {
-            if self.nicoAccount.loggingIn(mail_tel: self.mailField.stringValue, password: self.passField.stringValue) {
-                self.updateLabel()
-            } else {
-                mailLabel.textColor = NSColor.red
-                passLabel.textColor = NSColor.red
-            }
-        }
+    func cancel(_ sender: Any?) {
+        self.close()
     }
+
+    @IBAction func switchView(_ toolbarItem: NSToolbarItem) {
+        let viewController = self.viewControllers[toolbarItem.tag]
+
+        let windowFrame: NSRect = (self.window?.frame)!
+        var newWindowFrame: NSRect = (self.window?.frameRect(forContentRect: viewController.view.frame))!
+        newWindowFrame.origin.x = windowFrame.origin.x
+        newWindowFrame.origin.y = windowFrame.origin.y + windowFrame.size.height - newWindowFrame.size.height
+
+        self.window?.contentViewController = nil
+        self.window?.title = viewController.title!
+        self.window?.setFrame(newWindowFrame, display: true, animate: true)
+        self.window?.contentViewController = viewController
+
+    }
+
 }

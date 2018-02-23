@@ -20,4 +20,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    // Click dock icon to reopen.
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        if !flag {
+            for openWindow: NSWindow in sender.windows {
+                openWindow.makeKeyAndOrderFront(self)
+            }
+        }
+        return true
+    }
+
 }
