@@ -49,3 +49,8 @@ Released under the [MIT License][PySwiftyRegex-License].
 [Fuzi-License]: https://github.com/cezheng/Fuzi/blob/master/LICENSE
 [PySwiftyRegex-License]: https://github.com/cezheng/PySwiftyRegex/blob/master/LICENSE
 
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/kPherox/NicoDownloader/badge.svg?style=beer-square)](https://beerpay.io/kPherox/NicoDownloader)  [![Beerpay](https://beerpay.io/kPherox/NicoDownloader/make-wish.svg?style=flat-square)](https://beerpay.io/kPherox/NicoDownloader?focus=wish)
